@@ -1,0 +1,23 @@
+{
+    "name": "NBC-Nike-Bot-China",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Automatic intelligent unattended nike robot by:rainzee",
+    "icons": {
+        "128": "Nike.png"
+    },
+    "browser_action": {
+        "default_icon": "nike.png",
+        "default_title": "机器人准备就绪"
+    },
+
+    "content_scripts": [
+    {
+        "matches": ["http://store.nike.com/*"],
+        "js": ["autocart.js"]
+    }
+  ],
+    "permissions": [
+        "tabs", "http://store.nike.com/*"
+  ]
+}
